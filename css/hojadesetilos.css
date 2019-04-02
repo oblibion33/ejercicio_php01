@@ -16,7 +16,7 @@ a.submenu{
 #contenedor{
     width:100%;
 }
-#titulo{
+#titulo-de-sitio{
     width:100%;
     height: 80px;
     float: left;
@@ -33,6 +33,7 @@ a.submenu{
    height: 500px; 
    float: left;
    background: yellow;
+   margin-bottom: 30%; 
 }
 #titulo-de-pagina{
     

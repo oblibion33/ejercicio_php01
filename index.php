@@ -14,26 +14,31 @@ and open the template in the editor.
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     </head>
     <body>
-        <div id="contenedor">
-            <div id="titulo-de-pagina" class=""></div>
-            <div id="titulo"></div>
-            <div id="menu"><?php include('menu.php'); ?></div>
-            <div id="contenido"></div>
-        </div>
+        <div id="titulo-de-pagina" class=""></div>
+        <div id="contenedor">  
+            <div>
+                <div id="menu"><?php include('menu.php'); ?></div>
+                <div id="contenido">  
+                    <div id="titulo-de-sitio"> 
+                        <h1></h1>
+                    </div>
+                </div>
+
+            </div>
+
     </body>
-    
+
     <script>
-        $("#ventas_express").click(function(){
-            
-            if ($("[id*=subventas_express]").css("display")!="none"){
-                $("[id*=subventas_express]").css("display","none");
-            }
-            else{
+        $("#ventas_express").click(function () {
+
+            if ($("[id*=subventas_express]").css("display") !="none") {
+                $("[id*=subventas_express]").css("display", "none");
+            } else {
                 $("[id*=subventas_express]").show();
-                $("[id*=subventas_express]").css("display","block");
-                
+                $("[id*=subventas_express]").css("display", "block");
+
                 //id*= significa que todos los puntos que tengan el id especificado podran realizar esa funcion
             }
-         });
+        });
     </script>
 </html>
